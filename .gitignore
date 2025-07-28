@@ -1,0 +1,8 @@
+.env
+final_venv/
+__pycache__/
+*.pyc 
+
+
+Knowledge Base/
+vector DB/

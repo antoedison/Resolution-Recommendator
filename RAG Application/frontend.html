@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF Assistant</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/antoedison/GenAi/main/Showcase/Images/Project_logo.png" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside>
+    <h1>📄 PDF Assistant</h1>
+    <p>Upload one or more PDFs and ask questions about them!</p>
+    <p><strong>Powered by:</strong></p>
+    <ul>
+      <li>Google Generative AI</li>
+      <li>LangChain</li>
+      <li>FAISS VectorStore</li>
+    </ul>
+  </aside>
+
+  <main>
+    <h2>🧠 PDF Question Answering App</h2>
+
+    <form id="uploadForm" >
+      <label for="file">Upload a PDF</label>
+      <input type="file" id="file" name="file" accept=".pdf,.csv,.json" required />
+      <button type="submit">Upload PDF</button>
+    </form>
+
+    <div id="uploadStatus"></div>
+
+    <form id="queryForm">
+      <label for="question">💬 Ask a question about the PDFs</label>
+      <input type="text" id="question" name="question" placeholder="Type your question..." required />
+      <button type="submit">Ask Question</button>
+    </form>
+
+    <!-- Output areas -->
+    <div id="submissionStatus"></div>
+    <div id="answerOutput"></div>
+
+    <section class="expander">
+      <h3>📚 Source Documents</h3>
+      <p>Content preview will be shown here after answering the query.</p>
+    </section>
+
+    <footer>
+      &copy; 2025 PDF Assistant. All rights reserved.
+    </footer>
+  </main>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
